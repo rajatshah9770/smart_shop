@@ -1,0 +1,140 @@
+<DOCTYPE HTML>
+    <HEAD>
+        <title> Shopping Cart </title>
+        
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!-- Compiled and minified JavaScript -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	
+	<script src="js/script.js"></script>
+        
+        <link rel="stylesheet" href="./css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+
+    </HEAD>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems);
+        });
+    </script>
+
+    <body class="bg">
+<div class=card-panel">
+        <div class="row valign-wrapper">    
+            <div class="row">                
+                    <div class="col s12  m8 offset-m2 l8 offset-l2 card large hoverable">
+                        <br>
+                        <div class="card-title center-align">
+                            <h5>Register</h5>
+                        </div>
+
+                        <div class="card-content">
+                            
+                            <div id="registerdiv">
+                                <form method="POST" action="" name="register"> 
+                                    <div class="input-field left col s6 m6 l6">
+                                        <label for="fname" class="left ">First Name</label>
+                                        <input type="text" class="left valid" id="fname" name="fname"/>
+                                    </div>
+                                    
+                                    <div class="input-field left col s6 m6 l6">
+                                        <label for="lname" class="left">Last Name</label>
+                                        <input type="text" class="left" id="lname" name="lname"/>
+                                    </div>
+
+                                    <div class="input-field left col s3 m3 l3">
+                                        <label for="age" class="left">Age</label>
+                                        <input type="text" class="left" id="age" name="age"/>
+                                    </div>
+
+                                    <div class="input-field left col s3 m3 l3">
+                                        <label ><p>Gender:</p>
+				        <label><input name="group" type="radio" id="user" class="with-gap" checked/>
+        				<span>Male</span></label>
+      
+        				<label><input name="group" type="radio" id="manager" class="with-gap"/>
+        				<span>Female</span></label>
+      					</label>
+
+
+                                    </div>
+
+                                    <div class="input-field left col s6 m6 l6">
+                                        <label for="phone" class="left">Phone</label>
+                                        <input type="text" class="left" id="phone" name="phone"/>
+                                    </div>
+
+                                    <div class="input-field left col s6 m6 l6">
+                                        <label for="userid" class="left">Username</label>
+                                        <input type="text" class="left" id="userid" name="userid"/>
+
+                                    </div>
+                               
+				<div class="input-field left col s6 m6 l6">
+					<label for="password" class="left">Password</label>
+					<input type="password" class="left" id="password" name="password"/>
+                                </div>
+				
+				 <div class="input-field left col s6 m6 l6">        
+					<label >Register as:
+				        <label><input name="group1" type="radio" id="user" class="with-gap" checked/>
+        				<span>User</span></label>
+      
+        				<label><input name="group1" type="radio" id="manager" class="with-gap"/>
+        				<span>Manager</span></label>
+      					</label>
+				</div>
+
+				<div class="input-field right col s6 m6 l6">
+					<label for="cpassword" class="left">Confirm Password</label>
+					<input type="password" class="left" id="cpassword" name="cpassword"/>
+				</div>
+
+                                    <div class="input-field col s12 m12 l12">
+                                        
+                                        <label>Security Question</label>
+                                        <br>
+                                        <select>
+                                            <option value="" disabled selected></option>
+                                            <option value="1">Childhood friend name? </option>
+                                            <option value="2">Birth Place? </option>
+                                            <option value="3">Favourite Sport? </option>
+
+                                        </select>
+
+                                        
+                                    </div>
+                                    
+                                    <div class="input-field left col s12 m12 l12">
+                                            <label for="answer" class="left">Answer</label>
+                                            <input type="text" class="left" id="answer" name="answer"/>
+
+					
+                                    </div>
+
+                                <div class="center col s12 m12 l12">
+					<button class="btn waves-effect waves-light pulse" type="submit" name="submit" onclick="valid()" value="submit" >Submit</button>
+				</div>
+
+                                
+                            </div>
+				</form>
+                            
+                        </div>
+                    </div>
+            </div>
+
+            <!-- <div class="col s12 m8 l3 left valign-wrapper">
+                <h1 id="hd1" class="center-align">SHOPPING CART</h1>
+            </div> -->
+        </div>
+</div>
+
+    
+    </body>
+    
+</HTML>

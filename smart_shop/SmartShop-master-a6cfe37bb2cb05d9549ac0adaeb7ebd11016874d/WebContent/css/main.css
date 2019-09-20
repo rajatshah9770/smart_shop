@@ -1,0 +1,72 @@
+body{
+    background: #ffffff;
+    padding: 0px;
+    margin: 0px;
+
+    min-height: 100%;
+}
+
+html{
+    min-height: 100%;
+}
+
+.bg{
+    background-image: url("../images/bg2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    min-height: 100%;
+}
+
+#hd1{
+
+    margin: 0px;
+    padding: 0px;
+
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 6rem;
+    font-weight: 400;
+
+    position: fixed;    
+}
+
+.row{
+    
+    padding: 0px !important;
+
+    min-height: 100%;
+    min-width: 100%;
+}
+
+
+.card{
+    border-radius: 20px;
+}
+
+.tabs{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-tabs{
+    border-radius: 20px;
+}
+
+.input-field{
+    margin-top: 0rem;
+}
+
+.card-content{
+    padding-top: 5px !important; 
+}
+h5{
+    
+    margin-top: 5px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.card.small{
+    height: 200px;
+}

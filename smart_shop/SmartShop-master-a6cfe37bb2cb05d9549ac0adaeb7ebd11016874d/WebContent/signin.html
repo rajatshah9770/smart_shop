@@ -1,0 +1,69 @@
+<DOCTYPE HTML>
+        <HEAD>
+            <title> Shopping Cart </title>
+            
+            <!-- Compiled and minified CSS -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+            <!-- Compiled and minified JavaScript -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+            <link rel="stylesheet" href="./css/main.css">
+            <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    
+        </HEAD>
+    
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('select');
+                var instances = M.FormSelect.init(elems);
+            });
+        </script>
+    
+        <body class="bg">
+    
+            <div class="row valign-wrapper">    
+                <div class="row">                
+                        <div class="col s12  m8 offset-m2 l8 offset-l2 card small hoverable">
+                            <br>
+                            <div class="card-title center-align">
+                                <h5>Sign in</h5>
+                            </div>
+    
+                            <div class="card-content">
+                                
+                                <div id="register">
+                                    <form method="POST" action="">
+                                        
+                                        
+    
+                                        <div class="input-field left col s6 m6 l6">
+                                            <label for="userid" class="left">Username</label>
+                                            <input type="text" class="left" id="userid" name="userid">
+                                        </div>
+                                            
+                                        <div class="input-field left col s6 m6 l6">
+                                            <label for="password" class="left">Password</label>
+                                            <input type="password" class="left" id="password" name="password">
+                                        </div>
+    
+                                       
+                                        <div class="center-align">
+                                            <button class="left btn waves-effect waves-light" type="submit">Submit</button>
+                                            <a class="right" id="forget" href="">Forgot Password</a>    
+                                        </div>
+                                        
+                                        
+                                    </form>
+                                </div>
+                                
+                            </div>
+                        </div>
+                </div>
+               
+            </div>
+    
+        
+        </body>
+        
+    </HTML>
